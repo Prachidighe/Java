@@ -16,7 +16,11 @@ public class Fizz_Buzz_Game
 			limit = sc.nextInt();
 			for (int i = 1; i <=limit; i++) 
 			{
-				if (i % 3 == 0) 
+				if ((i % 3 == 0) && (i % 5 == 0)) 
+				{
+					System.out.println("Fizz Buzz");
+				}
+				else if (i % 3 == 0) 
 				{
 					System.out.println("Fizz");
 				} 
@@ -24,10 +28,6 @@ public class Fizz_Buzz_Game
 				{
 					System.out.println("Buzz");
 				} 
-				else if ((i % 3 == 0) && (i % 5 == 0)) 
-				{
-					System.out.println("Fizz Buzz");
-				}
 				else 
 				{
 					System.out.println(i);
