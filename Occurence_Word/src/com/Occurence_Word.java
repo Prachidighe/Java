@@ -1,3 +1,5 @@
+//Using Scanner class
+
 package com;
 
 import java.io.File;
@@ -22,7 +24,8 @@ public class Occurence_Word
 		    if (find_word.equalsIgnoreCase(find))
 		    	count++;
 		}
-		
+		sc.close();
+		sc1.close();
 		System.out.println(count);
 		return count;
 	 }
